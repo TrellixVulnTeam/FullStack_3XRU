@@ -1,0 +1,68 @@
+<DOCTYPE html> <!-- padrão HTML 5 -->
+<html lang="pt_BR">
+	<head>
+		<title>HTML - Tabelas e Layouts</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Tabelas e Layouts</h1>
+
+		<table border="1" width="100%" >
+			<thead>
+				<tr>
+					<th>Coluna 1</th>
+					<th>Coluna 2</th>
+					<th>Coluna 3</th>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">Descrição da Tabela</td>
+					<td align="center">Descrição da Tabela</td>
+				</tr>
+			</thead>
+			<tbody>
+			<tr align="center">
+				<td>1A</td>
+				<td>1B</td>
+				<td>1C</td>
+			</tr>
+			<tr>
+				<td align="center">2A</td>
+				<td>2B</td>
+				<td>2C</td>
+			</tr>
+			<tr>
+				<td>3A</td>
+				<td>3B</td>
+				<td>3C</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">Rodapé da Tabela</td>
+			</tr>
+		</tfoot>
+		</table>
+
+		<h2> Tabela como Layout</h2>
+
+		<table width="600">
+			<tr height="90" align="center">
+				<td width="20"></td>
+				<td bgcolor="#DDDDDD">Cabeçalho</td>
+				<td width="20"></td>
+			</tr>
+			<tr>
+				<td align="center"></td>
+				<td bgcolor="#EEEEEE">Conteúdo</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td bgcolor="#FF0000" colspan="3">Rodapé</td>
+			</tr>
+		</table>
+
+
+	</body>	
+</html>
+
+<!-- posso alinhar o tbody=toda a tabela, o tr=toda linha, o td cada coluna -->

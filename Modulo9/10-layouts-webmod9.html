@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Layouts Web - ARC-Tecnologia</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/resetmod9.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="./css/layoutmod9.css">
+		<link rel="stylesheet" type="text/css" href="./css/graficosmod9.css">
+		
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-End</h2>
+			<p>Aprenda do Zero ao Pro</p>
+			<div><h2>ARC-Tecnologia</h2></div>
+			<h5>Tudo para seu mundo mudar</h5>
+			<p>Aprenda de modo prático</p>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul class="navegacao">
+					<li><a href="01-introducaomod9.html">Introdução</a></li>
+					<li><a href="02-listas-e-linksmod9.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-textomod9.html">Formatacão</a></li>
+                    <li><a href="04-tabelasmod9.html">Tabelas</a></li>
+					<li><a href="05-layoutsmod9.html">Layouts</a></li>
+					<li><a href="06-formulariosmod9.html">Contato</a></li>
+                    <li><a href="07-introducaomod9.html" target="meu_iframe>Introdução</a></li>
+                    <li><a href="08-homepagemod9.html">Homepage</a></li>
+                </ul>
+
+			</nav>
+
+			<article>
+				<div id="grafico-01">
+                    <img class="filtro" src="./images/coffee-squaremod9.jpg" alt="café">
+                </div>
+				<h3>Testando imagens e filtros</h3>					
+				<div class="coluna">Todos nós sonhamos em ter sucesso. Se você é como a maioria das
+					pessoas, já passou bastante tempo pensando sobre o que constitui o
+					sucesso, como alcançá-lo e quão bem se sentirá quando finalmente
+					atingir seus objetivos.
+				</div>
+			
+				
+				<div class="coluna coluna-iframe">
+					<h3>Aprendendo sobre o uso do iframe</h3>
+					<!-- Cria moldura para carregar uma página dentro de outra -->
+					<iframe src="02-listas-e-linksmod9.html"
+						name="meu_iframe"></iframe>
+				</div>
+
+				<div class="coluna coluna-100w">
+					<h3>Layouts em coluna - Video</h3>
+					<iframe width="560" height="315" 
+					src="https://www.youtube.com/embed/j8b8PKYmCjs" 
+					title="YouTube video player" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; 
+					encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen></iframe>
+				</div>  
+			</article>         
+               
+
+				<div class="table-container">
+
+					<h3>Finanças / Vendas</h3>
+
+					<table>
+						<thead>
+							<tr>
+								<th>Ano 2020</th>
+								<th>1° Trimestre</th>
+								<th>2° Trimestre</th>
+								<th>3° Trimestre</th>
+								<th>4° Trimestre</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Produto A</td>
+								<td>650</td>
+								<td>700</td>
+								<td>800</td>
+								<td>750
+									<br>780
+									<br>800
+								</td>
+							</tr>
+							<tr>
+								<td>Produto B</td>
+								<td>950</td>
+								<td>500</td>
+								<td>600</td>
+								<td>880</td>
+							</tr>
+							<tr>
+								<td>Produto C</td>
+								<td>150</td>
+								<td>300</td>
+								<td>500</td>
+								<td>450</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>Total</td>
+								<td>1.750</td>
+								<td>1.500</td>
+								<td>1.900</td>
+								<td>2.080</td>
+							</tr>
+							<tr>
+								<td colspan="5">OBS:Os dados aqui apresentados são somente para testes</td>
+							</tr>
+						</tfoot>						
+					</table>
+				</div>
+
+			
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por ARC-Tecnologia</p>
+		</footer>
+		
+	</body>
+</html>
