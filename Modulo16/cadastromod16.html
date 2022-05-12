@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/custom.css">
-    <link rel="stylesheet" href="./style/custom-form.css">
+    <link rel="stylesheet" href="./style/custommod16.css">
+    <link rel="stylesheet" href="./style/custom-formmod16.css">
     <title>Cadastro</title>
 </head>
 
@@ -21,10 +21,10 @@
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./index.html#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./index.html#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./index.html#contatos">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./indexmod16.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./indexmod16.html#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./indexmod16.html#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./indexmod16.html#contatos">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,12 +46,12 @@
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
                     </div>
                 </div>
@@ -59,18 +59,25 @@
                 <div class="row">
                     <div class="col">
                         <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
-                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo">
+                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Complemento Endereço</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Complemento Endereço">
                     </div>
                     <div class="col">
+                        <label for="telefone" class="col-form-label col-form-label-sm">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" class="form-control" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
                         <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
-                        <select name="estado" id="estado" class="form-control">
+                        <select name="estado" id="estado" class="form-control" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                             <option value="">Selecione um estado</option>
                             <option value="sp">SP</option>
                             <option value="al">AL</option>
@@ -78,8 +85,16 @@
                         </select>
                     </div>
                     <div class="col">
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
+                    </div>
+                    <div class="col">
+                        <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" class="form-control" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
+                    </div>
+                    <div class="col">
                         <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control">
+                        <input type="text" name="cep" id="cep" class="form-control" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                     </div>
                 </div>
 
@@ -109,11 +124,10 @@
 
             <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber
                 novidades.</p>
+                
 
         </div> <!-- end .container -->
     </section>
-
-
 
 
     <div class="modal fade" id="modal-1">
@@ -130,11 +144,15 @@
                         <div class="row">
                             <div class="form-group col-4">
                                 <input type="text" class="form-control form-control-sm mb-2" name="nome"
-                                    placeholder="nome" required>
+                                    placeholder="nome" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                             </div>
                             <div class="form-group col-4">
                                 <input type="text" class="form-control form-control-sm mb-2" name="e-mail"
-                                    placeholder="e-mail" required>
+                                    placeholder="e-mail" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="telefone"
+                                    placeholder="telefone" required oninvalid="this.setCustomValidity('Campo Obrigatório')" onchange="try{setCustomValidity('')}catch(e){}">
                             </div>
                             <div class="form-group col-4">
                                 <button type="submit" class="btn btn-sm btn-success">receber novidades</button>
