@@ -8,7 +8,7 @@ function rootStyle(){
 
 function titleComponent(){
     const elemH1 = document.createElement('h1')
-    elemH1.innerHTML = 'Testando atualizacao WebPack'
+    elemH1.innerHTML = 'Testando atualizacao WebPack 2'
     elemH1.classList.add('title')
     return elemH1
 }
